@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "fruits-hub-ecommerce",
+          "appId": "1:990697078228:android:1223726b073249f4a3aa41",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "fruits-hub-ecommerce",
+          "configurations": {
+            "android": "1:990697078228:android:1223726b073249f4a3aa41",
+            "ios": "1:990697078228:ios:55180a0db804d91da3aa41",
+            "macos": "1:990697078228:ios:55180a0db804d91da3aa41",
+            "web": "1:990697078228:web:ca46f267f66fde5ca3aa41",
+            "windows": "1:990697078228:web:cdeddd17dc1ed461a3aa41"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
